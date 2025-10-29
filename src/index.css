@@ -1,0 +1,244 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f2f6f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+  background: #1a1a2e;
+  color: #e2e8f0;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+body.dark-mode .container {
+  background: #374151;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  text-align: center;
+  color: #1a73e8;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode h1 {
+  color: #64b5f6;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+.section {
+  margin-top: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table, th, td {
+  border: 1px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+body.dark-mode table, 
+body.dark-mode th, 
+body.dark-mode td {
+  border: 1px solid #4b5563;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+summary {
+  cursor: pointer;
+  color: #1a73e8;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+body.dark-mode summary {
+  color: #64b5f6;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  color: white;
+  display: inline-block;
+}
+
+.success {
+  background-color: #34a853;
+}
+
+.danger {
+  background-color: #ea4335;
+}
+
+/* Global Dark Mode Enhancements */
+body.dark-mode * {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Input fields */
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  background-color: #374151;
+  color: #e2e8f0;
+  border: 1px solid #4b5563;
+}
+
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+  border-color: #64b5f6;
+  outline: none;
+}
+
+/* Buttons */
+body.dark-mode button {
+  transition: all 0.3s ease;
+}
+
+body.dark-mode button:not(:disabled):hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Links */
+body.dark-mode a {
+  color: #64b5f6;
+}
+
+body.dark-mode a:hover {
+  color: #90caf9;
+}
+
+/* Scrollbar */
+body.dark-mode ::-webkit-scrollbar {
+  width: 12px;
+}
+
+body.dark-mode ::-webkit-scrollbar-track {
+  background: #2d3748;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb {
+  background: #4b5563;
+  border-radius: 6px;
+}
+
+body.dark-mode ::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+/* Global Text & Elements Dark Mode with Glow Effects */
+body.dark-mode p,
+body.dark-mode span,
+body.dark-mode div:not(.container):not([class*="btn"]):not([class*="button"]) {
+  color: #e0e0e0;
+  text-shadow: 0 0 3px rgba(100, 181, 246, 0.3);
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: #64b5f6;
+  text-shadow: 0 0 8px rgba(100, 181, 246, 0.5);
+}
+
+/* Cards and Sections */
+body.dark-mode .card,
+body.dark-mode section,
+body.dark-mode article {
+  background: #1e2a3a;
+  border-color: #2d3a4a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Tables */
+body.dark-mode table {
+  background: #1e2a3a;
+  border-color: #2d3a4a;
+}
+
+body.dark-mode th {
+  background: #1a237e;
+  color: #ffffff;
+}
+
+body.dark-mode td {
+  color: #e0e0e0;
+}
+
+body.dark-mode tr:nth-child(even) {
+  background: #1e2a3a;
+}
+
+body.dark-mode tr:nth-child(odd) {
+  background: #252f3f;
+}
+
+/* Glow effects for interactive elements */
+body.dark-mode button:hover,
+body.dark-mode a:hover,
+body.dark-mode input:focus,
+body.dark-mode textarea:focus,
+body.dark-mode select:focus {
+  box-shadow: 0 0 12px rgba(100, 181, 246, 0.4);
+}
+
+/* Labels and placeholders */
+body.dark-mode label {
+  color: #90caf9;
+}
+
+body.dark-mode ::placeholder {
+  color: #9ca3af;
+  opacity: 0.7;
+}
+
+/* Code and pre elements */
+body.dark-mode pre,
+body.dark-mode code {
+  background: #0d1b26;
+  color: #e0e0e0;
+}
+
+/* Borders with glow */
+body.dark-mode {
+  border-color: #2d3a4a;
+}
+
+body.dark-mode * {
+  box-shadow: none;
+}
+
+body.dark-mode input,
+body.dark-mode textarea,
+body.dark-mode select {
+  box-shadow: 0 0 6px rgba(100, 181, 246, 0.2);
+}
